@@ -1,0 +1,139 @@
+:root {
+  --primary-color: #6a0dad;  /* Purple */
+  --secondary-color: #ff0000;  /* Red */
+  --dark-bg: #121212;  /* Dark background */
+  --darker-bg: #090909;  /* Darker background */
+  --text-light: #ffffff;
+  --text-muted: #a0a0a0;
+}
+
+body {
+  background: var(--dark-bg);
+  color: var(--text-light);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.logo {
+  width: 30%;
+}
+
+.bg-black {
+  background: var(--darker-bg);
+}
+
+/* Navigation styling */
+.navbar {
+  background: var(--darker-bg) !important;
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.navbar-brand, .nav-link {
+  color: var(--text-light) !important;
+}
+
+.nav-link:hover {
+  color: var(--primary-color) !important;
+}
+
+/* Card styling */
+.card {
+  background: var(--darker-bg);
+  border: 1px solid var(--primary-color);
+  color: var(--text-light);
+}
+
+.card-header {
+  background: var(--primary-color);
+  color: var(--text-light);
+}
+
+/* Button styling */
+.btn-primary {
+  background: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+  background: #5a0b9d;
+  border-color: #5a0b9d;
+}
+
+.btn-danger {
+  background: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+.btn-danger:hover {
+  background: #cc0000;
+  border-color: #cc0000;
+}
+
+/* Form styling */
+.form-control {
+  background: var(--darker-bg);
+  border: 1px solid var(--primary-color);
+  color: var(--text-light);
+}
+
+.form-control:focus {
+  background: var(--darker-bg);
+  border-color: var(--primary-color);
+  color: var(--text-light);
+  box-shadow: 0 0 0 0.25rem rgba(106, 13, 173, 0.25);
+}
+
+/* Alert styling */
+.alert {
+  border: none;
+  border-radius: 4px;
+}
+
+.alert-success {
+  background: rgba(106, 13, 173, 0.2);
+  color: var(--primary-color);
+}
+
+.alert-danger {
+  background: rgba(255, 0, 0, 0.2);
+  color: var(--secondary-color);
+}
+
+/* Table styling */
+.table {
+  color: var(--text-light);
+}
+
+.table thead th {
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.table td, .table th {
+  border-top: 1px solid var(--primary-color);
+}
+
+/* Links */
+a {
+  color: var(--primary-color);
+}
+
+a:hover {
+  color: #5a0b9d;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--darker-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #5a0b9d;
+}
